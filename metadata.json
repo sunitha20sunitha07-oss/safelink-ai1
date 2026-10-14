@@ -1,0 +1,6 @@
+{
+  "name": "SafeLink AI",
+  "description": "AI-Based Malicious URL Detection dashboard to analyse suspicious URLs, understand potential risks, and learn how to stay safe online.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

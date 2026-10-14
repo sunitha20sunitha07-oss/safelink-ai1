@@ -1,0 +1,92 @@
+{
+  "trainedAt": "2026-10-14T07:40:07.274Z",
+  "modelArchitecture": "Decision Tree Bagging Ensemble (7 Estimators, maxDepth=8)",
+  "datasetSources": [
+    "UNB ISCX-URL-2016 (Canadian Institute for Cybersecurity) - Benign URLs",
+    "PhishTank Verified Active Phishing Corpus - Malicious/Phishing URLs"
+  ],
+  "totalDatasetSamples": 5000,
+  "trainSamples": 4000,
+  "testSamples": 1000,
+  "featuresUsedCount": 13,
+  "featureImportances": [
+    {
+      "id": "url_length",
+      "name": "URL Length",
+      "weight": 33.8
+    },
+    {
+      "id": "hostname_entropy",
+      "name": "Hostname Entropy",
+      "weight": 16.2
+    },
+    {
+      "id": "subdomain_depth",
+      "name": "Subdomain Depth",
+      "weight": 14.5
+    },
+    {
+      "id": "hostname_length",
+      "name": "Hostname Length",
+      "weight": 11.2
+    },
+    {
+      "id": "hyphens_url",
+      "name": "Hyphens in URL",
+      "weight": 9
+    },
+    {
+      "id": "is_https",
+      "name": "HTTPS Transport",
+      "weight": 6.1
+    },
+    {
+      "id": "keyword_count",
+      "name": "Security Keywords",
+      "weight": 2.7
+    },
+    {
+      "id": "dots_url",
+      "name": "Dots in URL",
+      "weight": 2.4
+    },
+    {
+      "id": "dots_hostname",
+      "name": "Dots in Hostname",
+      "weight": 1.7
+    },
+    {
+      "id": "hyphens_hostname",
+      "name": "Hyphens in Hostname",
+      "weight": 1.6
+    },
+    {
+      "id": "has_at_symbol",
+      "name": "@ Symbol in URL",
+      "weight": 0.6
+    },
+    {
+      "id": "has_punycode",
+      "name": "Punycode Homoglyph",
+      "weight": 0.2
+    },
+    {
+      "id": "is_ip_hostname",
+      "name": "IP Address as Host",
+      "weight": 0
+    }
+  ],
+  "metrics": {
+    "accuracy": 90.8,
+    "precision": 90.8,
+    "recall": 90.8,
+    "f1Score": 90.8,
+    "confusionMatrix": {
+      "truePositives": 454,
+      "falsePositives": 46,
+      "trueNegatives": 454,
+      "falseNegatives": 46
+    }
+  },
+  "trainDurationMs": 55846
+}
